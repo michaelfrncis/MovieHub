@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="primary">@color/grey300</color>
+    <color name="primaryVariant">@color/black</color>
+    <color name="onPrimary">@color/black</color>
+
+    <color name="secondary">@color/orange300</color>
+    <color name="secondaryVariant">@color/orange700</color>
+    <color name="onSecondary">@color/white</color>
+
+    <color name="background">@color/black</color>
+    <color name="onBackground">@color/white</color>
+    <color name="surface">@color/black</color>
+    <color name="onSurface">@color/white</color>
+    <color name="error">@color/red300</color>
+    <color name="onError">@color/black</color>
+</resources>
