@@ -10,8 +10,7 @@ buildscript {
     dependencies {
         classpath 'com.android.tools.build:gradle:3.5.2'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
-        // NOTE: Do not place your application dependencies here; they belong
-        // in the individual module build.gradle files
+        classpath "androidx.navigation:navigation-safe-args-gradle-plugin:$rootProject.ext.navigationVersion"
     }
 }
 
@@ -19,10 +18,33 @@ allprojects {
     repositories {
         google()
         jcenter()
-        
     }
 }
 
 task clean(type: Delete) {
     delete rootProject.buildDir
+}
+
+ext {
+    targetSdkVersion = 29
+    compileSdkVersion = 29
+    minSdkVersion = 22
+
+    androidXVersion = '1.1.0'
+    androidGradlePlugin = '3.5.1'
+    constraintLayoutVersion = '2.0.0-beta3'
+    cardView = '1.0.0'
+    espressoVersion = '3.1.1'
+    glideVersion = '4.10.0'
+    junitVersion = '4.12'
+    koinVersion = '2.0.1'
+    lifecycleVersion = '2.2.0-rc02'
+    materialVersion = '1.1.0-beta02'
+    mockkVersion = '1.9.3'
+    navigationVersion = '2.2.0-rc02'
+    okHttpLogginVersion = '4.2.1'
+    pagingVersion = '2.1.0'
+    retrofitVersion = '2.6.2'
+    roomVersion = '2.2.2'
+    testJunitVersion = '1.1.1'
 }
